@@ -1,13 +1,18 @@
 <!doctype html>
-
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>Login to Tooth Castle!</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/signin.css" rel="stylesheet">
+
+
+
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,36 +24,30 @@
 </head>
 
 <body>
-	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
 
+	 <div class="container">
 
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		{{#each projects}}
-		  <div class="project" id="{{id}}">
-			<a href="project/{{name}}" class="thumbnail">
-			  <img src="images/{{image}}" ... />
-			  <p>{{name}}</p>
-			</a>
-		  </div>
-		{{/each}}
-		
-		<ol>
-		{{#each projects}}
-		  <li><a href="#{{id}}">{{name}}</a></li>
-		{{/each}}
-		</ol>
-	</div>
+      <form class="form-signin">
+        <!--<h2 class="form-signin-heading">Please Log In</h2>-->
+        <label for="inputEmail" class="sr-only">Email Address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember Me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="submitBtn">Login</button>
+      </form>
+
+      <!--<a href = "views/splash.htm" target="_blank"> test </a>-->
+
+    </div> <!-- /container -->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+
+  <script src="/js/index.js"></script>
 </body>
 </html>
