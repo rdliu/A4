@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
 <head>
-	<title>Login to Tooth Castle!</title>	
+	<title>APP NAME</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+  <link href="/css/index.css" rel = "stylesheet">
+
+	<!-- <link href="/css/introHCI.css" rel="stylesheet"> -->
 
   <!-- Custom styles for this template -->
   <link href="/css/signin.css" rel="stylesheet">
 
+
   <!-- Custom styles for this template -->
-  <link href="/css/navbar.css" rel="stylesheet">
+  <!-- <link href="/css/navbar.css" rel="stylesheet"> -->
 
 
 
@@ -27,55 +30,33 @@
 </head>
 
 <body>
-      <nav class = "navbar navbar-fixed-top navbar-custom">
-      <!--<nav class="navbar navbar-fixed-top navbar-default">-->
-      <!--<div class="container">-->
-        <div class="navbar-header">
-          <a class ="navbar-brand" href="#"> Tooth Castle </a>
-          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>-->
-        <!--</div>--><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
+  <div class = "container">
+      <h1> APP NAME </h1>
+      <br>
+      <br><br>
+      <img src = "/images/toothIcon.png" class = "mainIcon" id = "toothIcon">
+      <p id="toothTip"> Holder Text </p>
 
-    <br><br><br>
-    <br><br><br>
-	 <div class="container">
+      <br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
 
-      <form class="form-signin" name = "loginForm">
-        <!--<h2 class="form-signin-heading">Please Log In</h2>-->
-        <label for="inputUsername" class="sr-only">Name Your Castle</label>
-        <input type="username" id="inputUsername" class="form-control" placeholder="Name Your Castle" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember Me
-          </label>
-        </div>
-  
-        <button class="btn btn-lg btn-primary btn-block" type="button" id="submitBtn">Login</button>
-        <!--type="submit"-->
+      <form class="form-index" name = "loginForm">
+        <button class = "btn btn-lg btn-primary btn-block" type="button" id = "loginBtn">Login</button>
+        <br>
+        <button class = "btn btn-lg btn-primary btn-block" type="button" id = "registerBtn">Register</button>
       </form>
-
-      <!--<a href = "views/splash.htm" target="_blank"> test </a>-->
-
-    </div> <!-- /container -->
+      <br><br>
+      <div class = "help">
+        <img src = "/images/helpIcon.png" class = "helpIcon" id = "helpIcon">
+      </div>
+  </div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+
 
   <script src="/js/index.js"></script>
 </body>
