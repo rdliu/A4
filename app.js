@@ -16,8 +16,9 @@ var register = require('./routes/register');
 var help = require('./routes/help');
 
 var game = require('./routes/game');
+var status = require('./routes/status');
 
-var mouth = require('./routes/mouth');
+var zoo = require('./routes/zoo');
 var settings = require('./routes/settings');
 // Example route
 // var user = require('./routes/user');
@@ -54,8 +55,9 @@ app.get('/register/:name', register.viewRegister);
 app.get('/help/:name', help.viewHelp);
 
 app.get('/game/:name', game.viewGame);
+app.get('/status/:name', status.viewStatus);
 
-app.get('/mouth/:name', mouth.viewMouth);
+app.get('/zoo/:name', zoo.viewZoo);
 app.get('/settings/:name', settings.viewSettings);
 // Example route
 // app.get('/users', user.list);

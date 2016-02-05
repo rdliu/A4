@@ -17,8 +17,13 @@ function initializePage() {
 	$("#backButtonI").click(goToIndex);
 	$("#backButton").click(goToGameB);
 
-	$("#mouthButton").click(goToMouth);
+	$("#userAnimal").click(goToStatus);
+	$("#zooButton").click(goToZoo);
 	$("#settingsButton").click(goToSettings);
+
+	$("#userAnimal2").click(goToStatus);
+	$("#zooButton2").click(goToZoo);
+	$("#settingsButton2").click(goToSettings);
 
 	$("#helpIcon").click(goToHelp);
 }
@@ -45,9 +50,11 @@ function goToGameB(){
 function goToIndex(){
 	window.open("/", "_self");
 }
-
-function goToMouth(){
-	window.open("/mouth/mouth", "_self");
+function goToStatus(){
+	window.open("/status/status", "_self");
+}
+function goToZoo(){
+	window.open("/zoo/zoo", "_self");
 }
 function goToSettings(){
 	window.open("/settings/settings", "_self");
