@@ -73,8 +73,42 @@ button{
 }
 
 #helpIcon{
-
 	width: 100%;
 	text-align: right;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+
+	content: url('/images/QuestionMark.png');
+	width: 6%;
+	height: 7%;
+}
+
+#backButton, #backButtonI{
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+
+	content: url('/images/Back2.png');
+	width: 7%;
+	height: 3%;
+
+}
+
+#mouthButton{
+	text-align: right;
+	width : 100%;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#settingsButton{
+	text-align: right;
+	width : 100%;
+	position: absolute;
+	right: 20px;
+	top: 60px;
 }
 

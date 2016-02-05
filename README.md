@@ -1,4 +1,5 @@
-lab4
-====
+APP NAME
 
-Lab 4: Programming with Javascript
+something something.  POV.
+
+The current project is statically coded in HTML, CSS, JavaScript, employing bootstrap and handlebars, and deployed on Heroku.  

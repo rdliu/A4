@@ -15,7 +15,10 @@ var login = require('./routes/login');
 var register = require('./routes/register');
 var help = require('./routes/help');
 
-var main = require('./routes/main');
+var game = require('./routes/game');
+
+var mouth = require('./routes/mouth');
+var settings = require('./routes/settings');
 // Example route
 // var user = require('./routes/user');
 
@@ -50,7 +53,10 @@ app.get('/login/:name', login.viewLogin);
 app.get('/register/:name', register.viewRegister);
 app.get('/help/:name', help.viewHelp);
 
-app.get('/game/:name', main.viewGame);
+app.get('/game/:name', game.viewGame);
+
+app.get('/mouth/:name', mouth.viewMouth);
+app.get('/settings/:name', settings.viewSettings);
 // Example route
 // app.get('/users', user.list);
 
