@@ -67,7 +67,16 @@ button{
   padding: 15px;
   margin: 0 auto;
 }
-
+#table-action{
+	width: 100%;
+	text-align: center;
+	/*position:absolute;
+	bottom: 70px;*/
+}
+#userPlant{
+	width: 100%;
+	text-align: center;
+}
 #help{
 	text-align: right;
 }
@@ -79,7 +88,7 @@ button{
 	right: 20px;
 	bottom: 10px;
 
-	content: url('/images/QuestionMark.png');
+	content: url('/images/zzQuestionMark.png');
 	width: 6%;
 	height: 7%;
 }
@@ -91,7 +100,7 @@ button{
 	left: 20px;
 	top: 20px;
 
-	content: url('/images/Back2.png');
+	content: url('/images/zzBack2.png');
 	width: 7%;
 	height: 3%;
 
