@@ -16,6 +16,7 @@ function initializePage() {
 	$("#loginForm").submit(goToGame);
 	$("#backButtonI").click(goToIndex);
 	$("#backButton").click(goToGameB);
+	$("#backButton3").click(goToBack);
 
 	$("#userAnimal").click(goToStatus);
 	$("#zooButton").click(goToZoo);
@@ -26,6 +27,7 @@ function initializePage() {
 	$("#settingsButton2").click(goToSettings);
 
 	$("#helpIcon").click(goToHelp);
+	$("#helpIcon2").click(goToHelp2);
 }
 
 function goToLogin(){
@@ -62,6 +64,13 @@ function goToSettings(){
 function goToHelp(){
 	window.open("/help/help", "_self");	
 }
+function goToHelp2(){
+	window.open("/help2/help2", "_self");	
+}
+function goToBack(){
+	window.history.back();
+}
+
 
 function submitInfo(e) {
 	//for now just load next page

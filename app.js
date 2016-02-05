@@ -14,6 +14,7 @@ var project = require('./routes/project');
 var login = require('./routes/login');
 var register = require('./routes/register');
 var help = require('./routes/help');
+var help2 = require('./routes/help2');
 
 var game = require('./routes/game');
 var status = require('./routes/status');
@@ -53,6 +54,7 @@ app.get('/project/:name', project.viewProject);
 app.get('/login/:name', login.viewLogin);
 app.get('/register/:name', register.viewRegister);
 app.get('/help/:name', help.viewHelp);
+app.get('/help2/:name', help2.viewHelp2);
 
 app.get('/game/:name', game.viewGame);
 app.get('/status/:name', status.viewStatus);

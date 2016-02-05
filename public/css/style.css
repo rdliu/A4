@@ -141,7 +141,8 @@ button{
 	text-align: right;
 }
 
-#helpIcon{
+
+#helpIcon, #helpIcon2{
 	width: 100%;
 	text-align: right;
 	position: absolute;
@@ -153,7 +154,7 @@ button{
 	height: 5%;
 }
 
-#backButton, #backButtonI{
+#backButton, #backButtonI, #backButton3{
 	text-align: left;
 	width: 100%;
 	position: absolute;
@@ -190,11 +191,11 @@ button{
 	top: 60px;
 	max-height: 30px;
 	max-width: 30px;
-	content: url('/images/Settings.png');
+	content: url('/images/zoo.png');
 
 }
 #zooButton2{
-	content: url('/images/Settings.png');
+	content: url('/images/zoo.png');
 	max-width: 6em;
 	max-height: auto;
 }
